@@ -28,6 +28,7 @@ namespace CRUD_Angular
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+                //json on client-side as on server letter registers
                 .AddJsonOptions(options =>
                 {
                     var resolver = options.SerializerSettings.ContractResolver;
